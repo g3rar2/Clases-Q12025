@@ -10,6 +10,14 @@ namespace Clases_Q12025
 
         public string? Habitat { get; set; }
 
+        public FamiliaAve Familia {  get; set; }
+
+        public Ave()
+        {
+        Familia=new FamiliaAve();
+        }
+        
+
         public void Imprimir()
         {
             Console.WriteLine($"Nombre: {Nombre}");
@@ -17,8 +25,11 @@ namespace Clases_Q12025
             Console.WriteLine($"Color: {Color}");
             Console.WriteLine($"Tamano: {Tamano}");
             Console.WriteLine($"Habitat: {Habitat}");
-
-
+            Console.WriteLine($"Familia: {Familia.Nombre}");
+            Console.WriteLine($"Numero de especies: {Familia.NumeroEspecie}");
+            Console.WriteLine($"Caracteristicas: {Familia.Caracteristicas}");
+            Console.WriteLine();
+            Console.WriteLine();
         }
 
 
